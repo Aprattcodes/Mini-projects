@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <h2>Add items that you need and it will automatically place them in a grocery category</h2>
+    <div>
+        <form action="Shoplist" method="GET">
+        <input id="myInput" type="text">
+        <input type="button" value="Submit" onClick="pr()">
+        <span id="result"></span>
+        </form>
+    </div>
+
+<script>
+    // Create a new list item when clicking the Enter button
+/*function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var textNode = document.createTextNode(inputValue);
+    li.appendChild(textNode);
+   
+}*/
+
+function pr() {
+    document.getElementById("result").innerHTML = document.getElementById("myInput").value
+}
+
+</script>
+
+</body>
+</html>
