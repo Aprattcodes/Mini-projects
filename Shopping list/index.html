@@ -12,7 +12,7 @@
     <div>
         <form action="Shoplist" method="GET">
         <input id="myInput" type="text">
-        <input type="button" value="Submit" onClick="pr()">
+        <input id="myButton" type="button" value="Submit" onClick="pr()">
         <span id="result"></span>
         </form>
     </div>
@@ -28,7 +28,8 @@
 }*/
 
 function pr() {
-    document.getElementById("result").innerHTML = document.getElementById("myInput").value
+    document.getElementById("result").innerHTML = document.getElementById("myInput").value;
+    
 }
 
 </script>
