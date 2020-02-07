@@ -47,15 +47,15 @@
     </div>
   </div>
 
-  <audio data-key="65" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum kit\sounds\092_distorted-funky-ebass.wav"></audio>
-  <audio data-key="83" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum kit\sounds\092_distorted-funky-ebass.wav"></audio>
-  <audio data-key="68" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum kit\sounds\meep.wav"></audio>
-  <audio data-key="70" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum kit\sounds\oobah.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="65" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\bluesy-sax-finish.wav"></audio>
+  <audio data-key="83" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\congaa.wav"></audio>
+  <audio data-key="68" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\congab.wav"></audio>
+  <audio data-key="70" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\ufo-lightsabre-startup.wav"></audio>
+  <audio data-key="71" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\develop.wav"></audio>
+  <audio data-key="72" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\subwoofer-monkeys-distortion-loop.wav"></audio>
+  <audio data-key="74" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\fx_19a.wav"></audio>
+  <audio data-key="75" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\fx_19a.wav"></audio>
+  <audio data-key="76" src="C:\Users\alyss\Documents\GitHub\Mini-projects\Drum_kit\sounds\pad-cutoff-rhythm-loop.wav"></audio>
 
 <script>
 window.addEventListener('keydown', function(e) {
@@ -64,8 +64,17 @@ const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 if(!audio) return; //stop function running all together
 audio.currentTime = 0;
 audio.play();
-console.log(key);
+key.classList.add('playing');
+
 });
+
+function removeTransition(e) {
+  if(e.propertyName !== 'transform') return; //skip if it is not a transform
+  this.classList.remove('playing');
+}
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 </script>
 
 
