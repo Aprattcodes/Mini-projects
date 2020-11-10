@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="element">
+        <div id="form-container">
 
-    <div id="form-container">
+            <h1 id="title">Survey</h1>
+            <p id="description">Here is the survey</p>
 
-        <h1 id="title">Survey</h1>
-        <p id="description">Here is the survey</p>
+            <forum id="survery-form">
 
-        <forum id="survery-form">
+                <label id="name-label">
+                <input id="name" type=text value="name">
+                </label>
+                <label id="email-label">
+                <input id="email" type=text value="email"> <!-- If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+                </label>
+                <label id="number-label">
+                <input id="number" type=text value="number"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
+                                        If I enter numbers outside the range of the number input, which are defined by the min and max attributes, 
+                                        I will see an HTML5 validation error.-->
+                </label>
+                <input type="checkbox" value="True">
+                <select id="dropdown">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <input type="radio" name="style" value="RX">
+                <input type="radio" name="style2" value="RDX">
+                <textarea rows="5" cols="10">
+                    Give us a review!
+                </textarea>
+                <button id="submit">Submit</button> 
 
-            <label id="name-label">
-            <input id="name" value="name">
-            </label>
-            <label id="email-label">
-            <input id="email" value="email"> <!-- If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
-            </label>
-            <label id="number-label">
-            <input id="number" value="number"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
-                                    If I enter numbers outside the range of the number input, which are defined by the min and max attributes, 
-                                    I will see an HTML5 validation error.-->
-            </label>
-            <input type="checkbox" value="True">
-            <select id="dropdown">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            <input type="radio" name="style" value="RX">
-            <input type="radio" name="style2" value="RDX">
-            <textarea rows="5" cols="10">
-                Give us a review!
-            </textarea>
-            <button id="submit">Submit</button> 
-
-        </forum>
-    </div>
+            </forum>
+        </div>
+    </div>    
+</div>
 
 </body>
 </html>
