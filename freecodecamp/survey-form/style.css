@@ -8,6 +8,10 @@ body {
     background-color: gray;
 }
 
+h1, p{
+    color: white;
+}
+
 #form-container{
     flex-direction: column;
     justify-content: center;
@@ -32,3 +36,12 @@ input[type=text], textarea {
     color: white;
     font-size: 20px;
 }
+
+select, button {
+    background-color: #b0bbf4;
+}
+
+label {
+    color: white;
+}
+
