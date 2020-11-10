@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="element">
@@ -15,38 +16,44 @@
             <forum id="survery-form">
 
                 <label id="name-label">
-                <input id="name" type=text placeholder="name">
+                <input id="name" type="text" placeholder="name" required>
                 </label>
                 <label id="email-label">
-                <input id="email" type=text placeholder="email"> <!-- If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+                <input id="email" type="email" placeholder="email" required> <!-- If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
                 </label>
                 <label id="number-label">
-                <input id="number" type=text placeholder="id#"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
+                <input id="number" type="number" min="100" max="900" placeholder="ticket #"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
                                         If I enter numbers outside the range of the number input, which are defined by the min and max attributes, 
                                         I will see an HTML5 validation error.-->
                 </label>
                 
-                <label for="check">I am a Candyland Veteren</label>
+                <label for="check" style="color: #ec54a6;">I am a Candyland Veteren</label>
                 <input type="checkbox" id="check" value="True">
 
-                <label for="dropdown">Player Color Preference</label>
+                <label for="dropdown" style="color: #ec54a6;">Player Color Preference</label>
                 <select id="dropdown">
                     <option value="red">Red</option>
                     <option value="blue">Blue</option>
                     <option value="green">Green</option>
                     <option value="yellow">Yellow</option>
                 </select>
-                <div class="align">   
-                    <input type="radio" id="input1" name="location" value="gpt">
-                    <label for="input1">Ginger Plum Trees</label>
-                    <input type="radio" id="input2" name="location" value="pf">
-                    <label for="input2">Peppermint Forest</label>
-                    <input type="radio" id="input3" name="location" value="gm">
-                    <label for="input3">Gumdrop Mountains</label>
-                    <input type="radio" id="input4" name="location" value="pbh">
-                    <label for="input4">Peanut Brittle House</label>
-                    <input type="radio" id="input5" name="location" value="lpw">
-                    <label for="input4">Lollipop Woods</label>
+                <div class="align-column">
+                    <label for="radio-list" style="color: #ec54a6;">Choose your favorite place to visit:</label>
+                    <label>   
+                        <input type="radio" id="input1" name="location" value="gpt"/>
+                        Ginger Plum Trees</label>
+                    <label>
+                        <input type="radio" id="input2" name="location" value="pf"/>
+                        Peppermint Forest</label>
+                    <label>
+                        <input type="radio" id="input3" name="location" value="gm"/>
+                        Gumdrop Mountains</label>
+                    <label>
+                        <input type="radio" id="input4" name="location" value="pbh">
+                        Peanut Brittle House</label>
+                    <label>
+                        <input type="radio" id="input5" name="location" value="lpw">
+                        Lollipop Woods</label>
                 </div>
                 <label for="txt">Tell us more! Why would you love a trip to Candyland?</label>    
                 <textarea id="txt" rows="5" cols="5" ></textarea>

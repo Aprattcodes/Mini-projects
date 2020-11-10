@@ -5,11 +5,21 @@
 }
 
 body {
-    background-color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    background-image: url("https://i.pinimg.com/originals/e5/4b/85/e54b85a774298fc92acf64f220a4286a.jpg");
+    width: 100%;
+    background-position-x: center;
 }
 
 h1, p{
     color: white;
+}
+
+h1 {
+    font-family: 'Emilys Candy', cursive;
+    font-size: 45px;
 }
 
 #form-container{
@@ -28,10 +38,10 @@ h1, p{
 }
 
 .element{
-    margin: 40%;
+    margin-left: 8%;
 }
 
-input[type=text], textarea{
+input[type=text], input[type=email], input[type=number], textarea{
     background-color: #cdb7cd;
     color: white;
     font-size: 20px;
@@ -43,12 +53,30 @@ textarea {
 
 select, button {
     background-color: #b0bbf4;
+    border: none;
+    justify-content: center;
 }
 
+button {
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 4vh;
+    font-family: 'Emilys Candy';
+    color: white;
+    font-size: larger;
+}
 label {
     color: white;
+    padding-top: 20px;
+    align-items: center;
 }
 
-.align {
-    flex-direction: row;
+.align-column {
+    flex-direction: column;
+    line-height: normal;
 }
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
