@@ -21,7 +21,7 @@
                 <input id="email" type=text placeholder="email"> <!-- If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
                 </label>
                 <label id="number-label">
-                <input id="number" type=text placeholder="number"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
+                <input id="number" type=text placeholder="id#"> <!-- If I enter non-numbers in the number input, I will see an HTML5 validation error.
                                         If I enter numbers outside the range of the number input, which are defined by the min and max attributes, 
                                         I will see an HTML5 validation error.-->
                 </label>
@@ -36,21 +36,20 @@
                     <option value="green">Green</option>
                     <option value="yellow">Yellow</option>
                 </select>
-
-                <input type="radio" id="input1" name="style" value="gpt">
-                <label for="input1">Ginger Plum Trees</label>
-                <input type="radio" id="input2" name="style2" value="pf">
-                <label for="input2">Peppermint Forest</label>
-                <input type="radio" id="input3" name="style3" value="gm">
-                <label for="input3">Gumdrop Mountains</label>
-                <input type="radio" id="input4" name="style4" value="pbh">
-                <label for="input4">Peanut Brittle House</label>
-                <input type="radio" id="input5" name="style5" value="lpw">
-                <label for="input4">Lollipop Woods</label>
-                
-                <textarea rows="5" cols="1">
-                    Tell us why you want a trip to Candyland!
-                </textarea>
+                <div class="align">   
+                    <input type="radio" id="input1" name="location" value="gpt">
+                    <label for="input1">Ginger Plum Trees</label>
+                    <input type="radio" id="input2" name="location" value="pf">
+                    <label for="input2">Peppermint Forest</label>
+                    <input type="radio" id="input3" name="location" value="gm">
+                    <label for="input3">Gumdrop Mountains</label>
+                    <input type="radio" id="input4" name="location" value="pbh">
+                    <label for="input4">Peanut Brittle House</label>
+                    <input type="radio" id="input5" name="location" value="lpw">
+                    <label for="input4">Lollipop Woods</label>
+                </div>
+                <label for="txt">Tell us more! Why would you love a trip to Candyland?</label>    
+                <textarea id="txt" rows="5" cols="5" ></textarea>
                 <button id="submit">Submit</button> 
 
             </forum>

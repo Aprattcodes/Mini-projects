@@ -31,10 +31,14 @@ h1, p{
     margin: 40%;
 }
 
-input[type=text], textarea {
+input[type=text], textarea{
     background-color: #cdb7cd;
     color: white;
     font-size: 20px;
+}
+
+textarea {
+    text-align: left;
 }
 
 select, button {
@@ -45,3 +49,6 @@ label {
     color: white;
 }
 
+.align {
+    flex-direction: row;
+}
