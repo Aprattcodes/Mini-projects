@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
 #header {
     display: flex;
     flex-direction: row;
@@ -36,6 +39,7 @@ li {
 
 h1 {
     font-size: 45px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .bottle-container {
