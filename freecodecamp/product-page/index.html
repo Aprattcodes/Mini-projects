@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="https://photos.app.goo.gl/Rp1WZ5J675eEmbHx9" alt="esme-logo">
+        <img id="header-img" src="https://lh3.googleusercontent.com/73bC0AorgEzrtTTzAq8LT3fGln8c3AdS9PMLs1usU6DxOFlAllEkhY9DrbMH3K4FuTNdONnZNvtGjefCxHubuHwLTFurL4y8axw8NR3-gLswf0AVAjpACuDaCQ9X1TDpMvQJ9S1xGg=w2400" alt="esme-logo">
         <nav id="nav-bar"> <!--navbar should always be at the top of the viewport.-->
             <ul>
                 <li class="nav-link">About.</li>
@@ -17,12 +17,22 @@
             </ul>
         </nav>
     </header>
+    <div class="products">
+        <h1>Our Spirits</h1>
+        <div class="bottles">
+            <img src="https://www.esmespirits.com/wp-content/uploads/sites/98/Esme_Vodka_NV_WEB-121x402.png" alt="blue label">
+            <img src="https://www.esmespirits.com/wp-content/uploads/sites/98/Esme_BlackShield_RT-2-113x402.png" alt="black label">
+            <img src="https://www.esmespirits.com/wp-content/uploads/sites/98/Esme_Gin_New_RT-175x402.png" alt="gin">
+        </div>
+    </div>
     <form id="form">
         <input id="email" type="email" placeholder="info" required> <!--The #email input field uses HTML5 validation to confirm that the entered text is an email address.-->
         <button><input id="submit" type="submit"></button> <!--When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).-->
     </form>
     <div>
-        <video id="video"></video>
+        <video id="video" controls autoplay preload="metadata">
+            <source src="https://lh3.googleusercontent.com/R8ymMfbB8TxOU595UPKtwRuwuUOskzE9YMnGq9-MJCMtVwobYtoBrQpMZZ3N4h7U93YZSHLcZPCw34rSWgxRRYDIe9WfpKymxWIYs4XRrVQi8ZQdDFS-F3Q5Cqg6AGNOceAT4Zifig=m18" type="video/mp4">
+        </video>
     </div>
 </body>
 </html>
