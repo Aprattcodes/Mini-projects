@@ -78,22 +78,20 @@ p{
 .bottles {
     width: 20vh;
     height: auto;
-    padding-right: 10%;
     align-self: baseline;
 }
 
 .video-container {
     width:100%;
-    height: 25vh;
+    height: 40vh;
     background-color: black;
-    text-align: right;
+    padding-left: 20%;
 }
 
 .form-container {
-    background-color: aquamarine;
-    width: 50vh;
-    height: 20vh;
-    padding: 10px;
-    margin: 50px;
-    opacity: 80%;
+    background-color: #618b7dc7;
+    padding: auto;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
 }
